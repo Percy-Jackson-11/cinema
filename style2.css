@@ -91,6 +91,10 @@ body {
     border-radius: 5px;
 }
 
+.corpo input:hover {
+    background: #12f112;
+}
+
 .testo {
     width: 80%;
 }
@@ -151,6 +155,10 @@ body {
     height: 30px;
     background: #88ff8c;
     border: 3px solid black;
+}
+
+.input_biglietto input:hover {
+    background: rgb(14, 249, 14);
 }
 
 select {

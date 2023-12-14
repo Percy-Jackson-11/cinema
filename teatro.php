@@ -59,7 +59,7 @@ if (isset($_POST['submit'])) {
                     <div class="input_biglietto">
                         <h2>Proprietario</h2>
                         <input type="text" name="nominativo" placeholder="Nominativo" required>
-                        <input type="number" name="eta" value="1" placeholder="eta" min="1" max="99" required>
+                        <input type="number" name="eta" placeholder="eta" min="1" max="99" required>
                         <input type="email" name="email" placeholder="email" required>
                     </div>
                     <div class="input_biglietto">
