@@ -1,5 +1,14 @@
 <?php
 session_start();
+
+if (isset($_COOKIE["tempo"])) {
+
+    $tempo = date('d/m/Y');
+    $scritta = "Bentornato sul nostro sito, non ci vediamo da:" . $tempo;
+
+    setcookie("tempo", $tempo, time() + (86400 * 30));
+}
+
 if (isset($_POST["logout"])) unset($_SESSION["active_login"]); //se attivo il logout (bottone sotto) chiudi la sessione
 if (!isset($_SESSION["active_login"])) header("Location:index.php"); // se non è stata attivata la sessione torna alla pagina precedente
 
@@ -30,6 +39,9 @@ if (isset($_POST['submit'])) {
 
 <body>
     <div class="contenitore">
+        <script>
+            alert("<?= $scritta ?>");
+        </script>
         <div class="nav">
             <ul>
                 <li><img src="img/ticket.png" alt="" onclick="apri_biglietto()"></li>
