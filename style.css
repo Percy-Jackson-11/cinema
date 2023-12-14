@@ -37,6 +37,7 @@ form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -74,4 +75,21 @@ input:active :-moz-placeholder {
     border: 5px solid rgb(245, 239, 239);
     background: url("img/puffer-fish.png");
     background-size: cover;
+}
+
+.form h2 {
+    color: red;
+    margin-top: 0%;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+
+.piantina {
+    z-index: 5;
+    width: 60%;
+    height: 400px;
+    background: url("img/piantina.png");
+    background-repeat: none;
+    background-size: cover;
+    display: none;
 }

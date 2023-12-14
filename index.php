@@ -14,15 +14,6 @@ if (!isset($_COOKIE["tempo"])) {
 
 if (isset($_SESSION["active_login"])) header("Location: teatro.php");
 
-if (isset($_POST["submit"])) {
-    $user = $_POST["username"];
-    $psw  = $_POST["password"];
-
-    if ($user == "utente" && $psw == "locale") {
-        $_SESSION["active_login"] = $user;
-        header("Location: teatro.php");
-    } else $error = "Username o password errati!";
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +29,6 @@ if (isset($_POST["submit"])) {
     <div class="contenitore">
 
 
-
         <div class="form">
             <script>
                 alert("<?= $scritta ?>");
@@ -49,6 +39,19 @@ if (isset($_POST["submit"])) {
                 <input type="text" name="username" placeholder="Username"><img src="img/email.png" width="20px" height="20px" alt="">
                 <input type="password" name="password" placeholder="password"><img src="img/padlock.png" width="20px" height="20px" alt="">
                 <input class="submit" type="submit" name="submit" value="Accedi">
+                <h2>
+                <?php
+                if (isset($_POST["submit"])) {
+                    $user = $_POST["username"];
+                    $psw  = $_POST["password"];
+
+                    if ($user == "utente" && $psw == "locale") {
+                        $_SESSION["active_login"] = $user;
+                        header("Location: teatro.php");
+                    } else echo $error = "Username o password errati!";
+                }
+                ?>
+                </h2>
             </form>
         </div>
     </div>

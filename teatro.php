@@ -44,6 +44,11 @@ if (isset($_POST['submit'])) {
                 <p>He comes to see the unique and inimitable theatre show sequel to Harry Potter. Discover the hard inheritance that must bring the son of the One who lives and the mission that this, together with the best friend Scorpius will face in order not to help a father destroyed by the death of his son.</p>
             </div>
             <input type="button" onclick="apri_biglietto()" value="Prenota il biglietto">
+            <input type="button" onclick="apri_piantina()" value="Vedi piantina">
+        </div>
+
+        <div class="piantina">
+            <img src="img/piantina.png" alt="">
         </div>
         <div class="biglietto">
             <div class="titolo">
