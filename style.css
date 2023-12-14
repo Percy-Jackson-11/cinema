@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url('img/castle-1176422_1280.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenitore {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    margin-top: 10%;
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgb(245, 239, 239);
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    z-index: 2;
+
+}
+
+form {
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    width: 200px;
+    border: transparent;
+    border-bottom: 2px solid black;
+    margin-top: 5%;
+    margin-bottom: 8%;
+    background: transparent;
+    font-weight: bold;
+    color: white;
+}
+
+input:active :-moz-placeholder {
+    margin-top: -50px;
+
+}
+
+
+
+.submit {
+    width: 100px;
+    border: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background: rgb(242, 233, 226);
+    color: black;
+}
+
+.cerchio {
+    width: 85px;
+    height: 85px;
+    border-radius: 100%;
+    margin-top: -15%;
+    border: 5px solid rgb(245, 239, 239);
+    background: url("img/puffer-fish.png");
+    background-size: cover;
+}

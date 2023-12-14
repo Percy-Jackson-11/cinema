@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #333;
+}
+
+.contenitore {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    background: white;
+    height: 100px;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav_ul li:nth-child(2) {
+    margin-left: 70%;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_ul li:nth-child(2):hover {
+    scale: 1.25;
+    border-bottom: 3px solid orange;
+}
+
+
+.nav_ul li:nth-child(3) {
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_ul li:nth-child(3):hover {
+    scale: 1.25;
+    border-bottom: 3px solid rgb(0, 255, 145);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+.corpo {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-top: 5%;
+    margin-left: 35%;
+    height: 500px;
+    background: url("img/seamless-1657428_1280.jpg");
+    flex-direction: column;
+}
+
+.scritte {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.scritte h2 {
+    margin-top: 2%;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.corpo_scontrino {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.corpo_scontrino h2 {
+
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    font-family: 'Afacad', sans-serif;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: 'Afacad', sans-serif;
+    font-weight: bold;
+    margin-top: 5%;
+    padding-left: 2.5%;
+    ;
+}
+
+.bottone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    margin-top: 5%;
+}
+
+.bottone:hover {
+    translate: 0px -10px;
+    scale: 1.15;
+
+}
+
+.bottone:hover input[type="submit"] {
+    background: rgb(0, 255, 30);
+}
+
+input[type="submit"] {
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2.5px solid black;
+    margin-top: 15%;
+}

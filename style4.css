@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("img/sfondo2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contenitore {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    list-style: none;
+    background: white;
+    height: 100px;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+
+.nav_ul li:nth-child(2) {
+    margin-left: 70%;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_ul li:nth-child(2):hover {
+    scale: 1.25;
+    border-bottom: 3px solid orange;
+}
+
+
+.nav_ul li:nth-child(3) {
+    margin-left: 10%;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_ul li:nth-child(3):hover {
+    scale: 1.25;
+    border-bottom: 3px solid rgb(0, 255, 145);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    margin-left: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+.corpo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    height: 500px;
+    opacity: 0.75;
+    background: white;
+    border-radius: 5px;
+    color: black;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.corpo h2 {
+    margin-bottom: 2.5%;
+}
+
+.corpo h2:first-child:hover {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.857);
+}
+
+.corpo h2:nth-child(3):hover {
+    border-bottom: 3px solid rgba(255, 153, 0, 0.857);
+}
+
+.corpo h2:nth-child(4):hover {
+    border-bottom: 3px solid rgba(225, 255, 0, 0.857);
+}
+
+.corpo h2:nth-child(5):hover {
+    border-bottom: 3px solid rgba(0, 255, 51, 0.857);
+}
+
+.corpo h2:nth-child(6):hover {
+    border-bottom: 3px solid rgba(0, 221, 255, 0.857);
+}
+
+.corpo h2:nth-child(7):hover {
+    border-bottom: 3px solid rgba(76, 0, 255, 0.857);
+}
+
+.corpo h2:nth-child(8):hover {
+    border-bottom: 3px solid rgba(255, 0, 212, 0.857);
+}
